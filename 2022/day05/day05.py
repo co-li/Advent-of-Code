@@ -18,7 +18,7 @@ def parse_input(puzzle_input: List[str]) -> Tuple[Dict[int, List[Any]], List[Any
         moves.append(map(int, re.findall(r'\d+', line)))
     return crates, moves
 
-    
+
 def part_one(puzzle_input: List[Any]) -> str:
     crates, moves = parse_input(puzzle_input)
     for count, start, end in moves:
