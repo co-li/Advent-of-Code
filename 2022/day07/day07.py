@@ -73,7 +73,7 @@ def build_filetree(puzzle_input: List[str]) -> 'FileTree':
             cur_dir.filesize = dir_size
             cur_dir.add_subdirs(subdirs)
         i += 1
-    return dir_root
+    return dir_root.subdirs['/']
 
 
 def part_one(puzzle_input: List[str]) -> int:
