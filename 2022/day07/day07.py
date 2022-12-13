@@ -7,7 +7,7 @@ class FileTree:
         self.parent = parent
         self.subdirs = {}
         self.filesize = 0
-    
+
     def __repr__(self):
         return f'FileTree(subdirs=({self.subdirs}), filesize={self.filesize})'
 
